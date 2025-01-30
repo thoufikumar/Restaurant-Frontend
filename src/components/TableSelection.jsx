@@ -12,7 +12,7 @@ const TableSelection = () => {
     const token = localStorage.getItem("token");
     const decodedToken = jwtDecode(token);
     console.log(decodedToken.userId);
-    const response = await axios.post("http://localhost:5004/book-table", {
+    const response = await axios.post("https://restaurant-backend-1-petz.onrender.com/book-table", {
       tableType: type,
       isBooked: true,
       bookingTime: Date.now(),

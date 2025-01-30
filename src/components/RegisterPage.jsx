@@ -22,7 +22,7 @@ const Signup = () => {
     });
   
     try {
-      const req = await axios.post("http://localhost:5004/register", {
+      const req = await axios.post("https://restaurant-backend-1-petz.onrender.com/register", {
         firstname,
         lastname,
         gender,

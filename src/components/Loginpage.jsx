@@ -17,7 +17,7 @@ const Login = () => {
     });
 
     try {
-      const req = await axios.post("http://localhost:5004/login", {
+      const req = await axios.post("https://restaurant-backend-1-petz.onrender.com/login", {
         email,
         password
       });
