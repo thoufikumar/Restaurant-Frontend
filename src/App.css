@@ -442,16 +442,16 @@ main {
 }
 /* Specific table background images */
 .table-card.vip {
-  background-image: url('D:/Restaurant Reservation System/viteproject/src/assets/images/vip.jpg');
+  background-image: url('https://i.pinimg.com/236x/1d/e8/fa/1de8fa2b0d2105d9439144696bf213f6.jpg');
 }
 .table-card.family {
-  background-image: url('D:/Restaurant Reservation System/viteproject/src/assets/images/family.jpg');
+  background-image: url('https://i.pinimg.com/236x/24/56/61/2456616872277bd348360f20e5cfd673.jpg');
 }
 .table-card.couple {
-  background-image: url('D:/Restaurant Reservation System/viteproject/src/assets/images/couple.jpg');
+  background-image: url('https://i.pinimg.com/736x/44/24/50/442450d9ade71aeb32d456a1874fc1c7.jpg');
 }
 .table-card.conference {
-  background-image: url('D:/Restaurant Reservation System/viteproject/src/assets/images/conference.jpg');
+  background-image: url('https://i.pinimg.com/236x/47/2d/8b/472d8b74c2897046545c2d33839abdf1.jpg');
 }
 /* Table Names Below Cards */
 .table-names {
