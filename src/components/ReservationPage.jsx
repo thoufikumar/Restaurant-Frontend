@@ -10,7 +10,7 @@ const ReservationPage = () => {
   const [isHotelDropdownVisible, setIsHotelDropdownVisible] = useState(false);
 
   const cities = [
-    "Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Vellore", "Thoothukudi", "Tiruppur", 
+    "Chennai", "Coimbatore", "Madurai", "Tiruchirappalli", "Salem", "Tirunelveli", "Erode", "Vellore", "Thoothukudi", "Tiruppur",
     "Kanchipuram", "Dindigul", "Karaikudi", "Thanjavur", "Cuddalore", "Nagapattinam", "Nagercoil", "Hosur", "Krishnagiri", "Ramanathapuram"
   ];
 
@@ -50,7 +50,7 @@ const ReservationPage = () => {
     { name: "Nagercoil Heritage Hotel", location: "Nagercoil", rating: 4, status: "open" },
     { name: "Hosur Gateway", location: "Hosur", rating: 4, status: "open" },
     { name: "Krishnagiri Comforts", location: "Krishnagiri", rating: 3, status: "open" },
-    { name: "Ramanathapuram Palace", location: "Ramanathapuram", rating: 3, status: "open" }    
+    { name: "Ramanathapuram Palace", location: "Ramanathapuram", rating: 3, status: "open" }
   ];
 
   const tables = [
@@ -58,7 +58,7 @@ const ReservationPage = () => {
     { type: "Family Table", capacity: 6, className: "family" },
     { type: "Couple Table", capacity: 2, className: "couple" },
     { type: "Conference Table", capacity: 10, className: "conference" }
-  ];
+  ]
 
   const filteredHotels = hotels.filter((hotel) =>
     selectedCity ? hotel.location === selectedCity : true

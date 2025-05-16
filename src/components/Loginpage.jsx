@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import axios from 'axios';
 import { Link, useNavigate } from "react-router-dom";
 import Header from "./Header";
+import { jwtDecode } from "jwt-decode";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -17,16 +18,18 @@ const Login = () => {
     });
 
     try {
-      const req = await axios.post("https://restaurant-backend-1-petz.onrender.com/login", {
+      const req = await axios.post("http://localhost:5004/login", {
         email,
         password
       });
 
       console.log("Response:", req.data);
-      localStorage.setItem("token",req.data.token);
+      localStorage.setItem("token", req.data.token);
+      const decodedToken = jwtDecode(req.data.token);
+      localStorage.setItem("userId", decodedToken.userId);
       if (req.data.isvalid) {
         alert("Login successful!");
-        navigate('/reservation'); 
+        navigate('/reservation');
       } else {
         alert("Invalid email or password!");
       }

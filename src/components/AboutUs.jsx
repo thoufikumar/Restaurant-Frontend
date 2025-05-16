@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import Header from "./Header"; 
+import Header from "./Header";
 
 function AboutUs() {
   const totalImages = 3;
@@ -9,14 +9,14 @@ function AboutUs() {
     const interval = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % totalImages);
     }, 2000);
-    return () => clearInterval(interval); 
+    return () => clearInterval(interval);
   }, [totalImages]);
 
   const currentClass = `image-container image-${currentIndex + 1}`;
 
   return (
     <div className="about-container">
-      <Header /> 
+      <Header />
       <main className="about-main">
         <div className="left-block">
           <div className={currentClass}></div>
@@ -26,11 +26,11 @@ function AboutUs() {
             <h2 className="about-title">About Us</h2>
             <p>
               Our restaurant reservation system is designed to offer a seamless and user-friendly experience for both guests and staff.
-               With just a few clicks, customers can easily book a table for their desired time and date,
-                ensuring that they never miss out on a dining experience. The system provides real-time availability, 
-                allowing users to choose from a variety of seating options based on their preferences.
-                 Additionally, it sends automated confirmations and reminders, so there’s no risk of forgetting a reservation.Whether for a special occasion or a casual meal, 
-                 our reservation system ensures convenience, efficiency, and satisfaction every time.
+              With just a few clicks, customers can easily book a table for their desired time and date,
+              ensuring that they never miss out on a dining experience. The system provides real-time availability,
+              allowing users to choose from a variety of seating options based on their preferences.
+              Additionally, it sends automated confirmations and reminders, so there’s no risk of forgetting a reservation.Whether for a special occasion or a casual meal,
+              our reservation system ensures convenience, efficiency, and satisfaction every time.
             </p>
           </div>
           <div className="mission-statement">
@@ -52,8 +52,8 @@ function AboutUs() {
           </div>
           <div className="contact-info">
             <h3>Contact Us</h3>
-            <p>Email: contact@yourcompany.com</p>
-            <p>Phone: +1 (234) 567-890</p>
+            <p>Email: Bookd@gmail.com</p>
+            <p>Phone: 9876543219</p>
           </div>
         </div>
       </main>
